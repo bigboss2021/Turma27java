@@ -5,7 +5,9 @@ programa
 	funcao inicio()
 	{   
        
-        real  n1,n2,n3, media, nome 
+        real  n1,n2,n3, media
+        caracter nome
+        
         escreva("entre com seu nome:")
         leia(nome)
         escreva("entre com a primeira nota:")
@@ -17,17 +19,17 @@ programa
 
 	   media=(n1+n2+n3)/10
 	   limpa()
-	   se (media>=7.0)
-	   { escreva(" Aluno: ",nome,",Parabens você foi aprovado,com nota:", mat.arredondar(media,2))
+	   se (media>=7.0){
+	    escreva(" Aluno: ",nome,",Parabens você foi aprovado,com nota:", mat.arredondar(media,2))
 		
-	}
-	senao se (media >=4 e media<7)
-	{
+	       }
+	    senao se (media >=4 e media<7){
+	   
 	  escreva(" Aluno: ",nome,", ficou de exame,com nota :", mat.arredondar(media,2))
 		
-	}
-senao {
-	escreva(" Aluno: ",nome,", você foi não foi aprovado,com nota:", mat.arredondar(media,2))
+	       }
+        senao {
+	   escreva(" Aluno:",nome,", você foi não foi aprovado,com nota:", mat.arredondar(media,2))
 }
 	}
 	
@@ -38,7 +40,7 @@ senao {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 118; 
+ * @POSICAO-CURSOR = 741; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
